@@ -55,6 +55,15 @@ Se você estivesse vendendo esse software e o comprador contratasse os melhores 
 - Queries do banco são eficientes em escala?
 - A arquitetura é escalável horizontalmente se necessário?
 
+### Observabilidade
+- Logs estruturados: erros e eventos críticos são logados com contexto suficiente pra debugar em produção
+- Nenhum `catch` silencioso — toda exceção capturada é logada ou relançada com contexto
+- Rastreabilidade: requests têm correlation ID do início ao fim (útil em APIs e sistemas distribuídos)
+- Métricas de saúde expostas: tempo de resposta, taxa de erro, uso de recursos
+- Alertas definidos pra falhas críticas — não descobrir que o sistema caiu pelo usuário
+- Logs não expõem dados sensíveis (senhas, tokens, PII)
+- Em produção: existe algum mecanismo de monitoramento ativo? (Sentry, Datadog, CloudWatch, etc.)
+
 ## Formato do output
 
 Pra cada finding:
