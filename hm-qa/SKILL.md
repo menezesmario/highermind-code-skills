@@ -46,12 +46,15 @@ Navegue pela aplicação como um usuário faria:
 - Requests de rede desnecessários
 - Memory leaks em sessões longas
 
-### 6. Acessibilidade básica
-- Contraste de cor atende WCAG AA
-- Navegação por teclado funciona
-- Elementos interativos têm focus states
-- Imagens têm alt text
-- Formulários têm labels
+### Acessibilidade
+- Contraste de texto: mínimo 4.5:1 para texto normal, 3:1 para texto grande — verificar com axe DevTools ou Colour Contrast Analyser
+- Elementos não-texto (ícones, bordas de input): mínimo 3:1 contra o fundo
+- Navegação por teclado: Tab percorre todos os elementos interativos em ordem lógica
+- Focus states: visíveis em todos os elementos interativos, contraste mínimo 3:1 contra fundo adjacente
+- Formulários: todo campo tem `<label>` associado — placeholder não substitui label
+- Imagens: `alt` presente e descritivo; imagens decorativas com `alt=""`
+- Cor não é o único indicador de estado — erro, sucesso, ativo, desabilitado têm reforço visual além da cor
+- Teste de dessaturação: retire a cor da tela e verifique se a hierarquia ainda comunica
 
 ## Formato do output
 

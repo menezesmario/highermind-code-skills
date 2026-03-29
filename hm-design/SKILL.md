@@ -33,6 +33,16 @@ As pequenas coisas que fazem alguém pausar. Uma animação de hover que parece 
 ### Usabilidade
 Sem esforço. O usuário nunca fica na dúvida do que fazer. Hierarquia de informação é clara. Ações primárias são óbvias. Navegação é intuitiva. A interface se ensina sozinha.
 
+### Acessibilidade
+Sofisticação não justifica exclusão. Dark mode exige atenção redobrada — é onde mais se erra.
+
+- Contraste de texto: mínimo 4.5:1 para texto normal, 3:1 para texto grande (>18px ou bold >14px) — WCAG AA
+- Elementos não-texto (ícones, bordas de input, separadores): mínimo 3:1 contra o fundo
+- Itens de menu: estados ativo/inativo não podem ser distinguidos só por opacidade ou variação sutil de cor
+- Focus states: nunca `outline: none` sem substituto visível — contraste mínimo 3:1 contra fundo adjacente
+- Cor não é o único indicador de estado — erro, sucesso, ativo, desabilitado precisam de forma, ícone ou label junto
+- Teste de dessaturação: remova toda a cor da interface. A hierarquia ainda está legível? Se não, reprovou.
+
 ### Beleza
 Baseado nos produtos mais belos, não nos mais comuns. Dark-first. Tipografia editorial. Sensibilidade cinematográfica. Whitespace generoso. Cor sofisticada com restrição.
 
@@ -45,6 +55,10 @@ Baseado nos produtos mais belos, não nos mais comuns. Dark-first. Tipografia ed
 - Hierarquia visual plana. Tudo com o mesmo peso.
 - Estética de painel admin de 2015.
 - Energia de "a gente faz bonito depois."
+- Itens de menu com contraste abaixo de 4.5:1
+- Estados distinguidos apenas por variação de opacidade
+- Focus states removidos ou invisíveis
+- Informação crítica comunicada só por cor
 
 ## Output
 
