@@ -38,6 +38,7 @@ Duas camadas:
 | `/hm-engineer` | Validar código | Arquitetura, segurança, performance, qualidade. Todas as camadas. Production-grade. |
 | `/hm-design` | Validar interface | Pra onde o software está indo, não pra onde ele esteve. Sofisticação, encantamento, beleza. |
 | `/hm-qa` | Testar tudo | Roda, quebra, verifica que funciona. Edge cases, fluxos, uso real. |
+| `/hm-review` | Revisar PRs | Analisa diff, impacto, regressões e segurança. Foco no que mudou, não no todo. |
 
 > Skills de direção (`/hm-align`, `/hm-sequoia`) estão em [highermind-business-skills](https://github.com/rodrigohighermind/highermind-business-skills).
 
@@ -50,6 +51,8 @@ Duas camadas:
 [constrói]     você dirige, o agente executa.
 /hm-design     você valida se a interface está na barra.
 /hm-engineer   você valida se o código está na barra.
+/hm-refactor   você tem código funcionando mas difícil de manter. ele reestrutura sem quebrar.
+/hm-review     alguém (ou você) abriu um PR. ele revisa o que mudou e o risco.
 /hm-qa         você verifica que realmente funciona.
 ```
 
